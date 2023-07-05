@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test.js' --reporter mocha-junit-reporter --reporter-options mochaFile=junit.xml --exit"
+    "test": "mocha 'test.js' --reqursive mocha-junit-reporter --reporter-options mochaFile=junit.xml --exit"
   },
   "author": "",
   "license": "ISC",
