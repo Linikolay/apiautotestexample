@@ -126,7 +126,7 @@ module.exports = function generate() {
 
     describe('TemplateBFF Check Create Get Template', async () => {
         it('/api/business/' + business + '/' + branch +'/paymentOrdersTemplate/' + templateID, async () => {
-            const res = await axios.get(webURl + "/api/business/" + business + '/' + branch +"/paymentOrdersTemplate/" + templateID, {
+            const res = await axios.get(webURl + "/api/business/" + business + '/' + branch +"/paymentOrdersTemplate333/" + templateID, {
                 headers: {
                     "X-Device-Info": deviceinfo,
                     Authorization: 'Bearer' + ' ' + token1
