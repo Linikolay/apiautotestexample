@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive --exit"
+    "test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=junit.xml"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "axios": "^1.2.0",
     "chai": "^4.3.7",
     "express": "^4.16.4",
+    "mocha-junit-reporter": "^2.2.0",
     "mocha": "^10.1.0",
     "moment": "^2.29.4",
     "node-fetch": "^3.3.0",
