@@ -1,5 +1,4 @@
 const should = require("should");
-
 const moment = require('moment')
 const expect = require("chai").expect;
 const mobileURL = "https://kbdbo-mobile-api-dev.kapitalbank.uz";
@@ -105,9 +104,7 @@ module.exports = function generate() {
             
             },
             ).then(res => res)
-           
             let datahead = await res.headers.location
-            
             const dataArr = await datahead.split('/')
             expect(res.status).equal(201)
             if (res.status == 201) {
